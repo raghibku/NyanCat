@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bigContainer{
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.nyan{
+    position: absolute;
+    bottom:45%;
+    left:15%
+}
+.nyan img{
+    height: 70px;
+    width: auto;
+}
+.blackCat{
+    position: absolute;
+    bottom:45%;
+    right:10%;
+}
+.blackCat img{
+    height: 70px;
+    width: auto;
+}
+.animateNyan{
+    animation: nyan 0.7s linear;
+}
+.animateBlackCat{
+    animation: blackCat 5s linear infinite;
+    
+    overflow: hidden;
+}
+.animateBlackCatShake{
+    animation: blackCatShake 1s linear;
+}
+@keyframes nyan{
+    0%{
+        bottom: 45%;
+    }
+    50%{
+        bottom: 60%;
+    }
+    100%{
+        bottom: 45%; 
+    }
+}
+@keyframes blackCatShake{
+    0%{
+        bottom:47%
+    }
+    100%{
+        bottom:43%
+    }
+}
+@keyframes blackCat{
+    0%{
+        left: 100vw;
+ 
+    }
+    100%{
+        left: -10vw;
+        
+    }
+}

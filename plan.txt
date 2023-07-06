@@ -1,0 +1,12 @@
+background
+{
+    score{
+        
+    }
+    nyanCat{
+
+    }
+    obstacle{
+
+    }
+}
