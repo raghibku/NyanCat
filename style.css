@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    /* zoom: 80%; */
+}
 .bigContainer{
     background-image: url("bg2.jpg");
     background-repeat: no-repeat;
@@ -33,12 +36,11 @@
 }
 .animateBlackCat{
     animation: blackCat 5s linear infinite;
-    
     overflow: hidden;
 }
-.animateBlackCatShake{
-    animation: blackCatShake 1s linear;
-}
+/* .animateBlackCatShake{
+    animation: blackCatShake 1s linear  infinite;
+} */
 @keyframes nyan{
     0%{
         bottom: 45%;
