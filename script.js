@@ -22,7 +22,7 @@ document.onkeydown = function (e) {
     }
 }
 // game over calc
-setTimeout(() => {
+setInterval(() => {
     nyan=document.querySelector(".nyan");
     blackCat=document.querySelector(".blackCat");
     gameOver=document.querySelector(".gameOver");
@@ -30,7 +30,7 @@ setTimeout(() => {
     bX =parseInt(window.getComputedStyle(blackCat,null).getPropertyValue("left"));
     dX=Math.abs(nX-bX);
 
-    if(dX<73){
+    if(dX<20){
         gameOver.innerHTML="GAMEOVER";
         blackCat.classList.remove("animateBlackCat");
     }
